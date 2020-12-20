@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Subway</title>
+		<link href="subway.css" rel="stylesheet">
+		<script src="subway.js"></script>
+	</head>
+	<body>
+		<p>Subway Roulette(?)</p>
+		<div class="form">
+			<div class="form-group">
+				<label for="city">City</label>
+				<select id="city">
+					<option>Rotterdam</option>
+					<option selected>Seoul</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="button"></label>
+				<button id="button">Go</button>
+			</div>
+		</div>
+		<output id="output"></output>
+		<script>
+			button.onclick = function()
+			{
+				run(city.value.toLowerCase()+'.json');
+			}
+		</script>
+	</body>
+</html>
